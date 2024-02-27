@@ -3,6 +3,8 @@
  		<title>Quadro de recados</title>
 	</head>
  	<body>
+		<p>Último acesso: {{ ultima_data|date:"d/m/Y H:i:s" }}</p>
  		<p>Temos {{ quantidade_recados }} recado(s).</p>
+		<p><a href="{% url 'logout' %}">Sair da aplicação</a></p>
  	</body>
 </html>
